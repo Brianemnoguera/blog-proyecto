@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros - Blog de Músicos de Blues Contemporáneos</title>
+    <link rel="stylesheet" href="../css/acercade.css">
+</head>
+<body>
+    
+<header>
+    <img class="logo" src="../media/logo.jpg" alt="logo">
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="../pages/musicos.html">Músicos</a></li>
+                <li><a href="../pages/albumes.html">Álbumes</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+</header>
+    <main>
+        <section class="about">
+            <h2>¡Bienvenido a nuestro blog!</h2>
+            <p>Somos un equipo de apasionados por la música blues contemporánea y hemos creado este blog para compartir nuestra pasión con el mundo. Nuestra misión es proporcionar información actualizada sobre los músicos, álbumes, conciertos y eventos más destacados dentro del mundo del blues.</p>
+            <p>En este blog, encontrarás perfiles detallados de músicos, reseñas de álbumes, cobertura de conciertos, entrevistas exclusivas, noticias y mucho más. ¡Esperamos que disfrutes explorando el fascinante mundo del blues contemporáneo junto a nosotros!</p>
+            <p>No dudes en ponerte en contacto con nosotros si tienes alguna pregunta, sugerencia o comentario. ¡Estamos aquí para escucharte!</p>
+        </section>
+        <section class="registrar">
+            <legend><h2>Formulario de registro</h2></legend>
+            <form id="form" action="https://formsubmit.co/brian_28noguera@outlook.com" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="ingresesucorreoelectronico" name="ingresesucorreoelectronico" placeholder="email">
+                </div>
+
+                <div>
+                    <label for="opciones">País:</label>
+                    <select id="opciones" name="opciones">
+                        <option value="" selected disabled>Seleccione una opción</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Brasil">Brasil</option>
+                    </select>
+                </div>
+                </div>
+                <div>
+                    <label for="imagen">Sube una imagen:</label>
+                    <input type="file" id="imagen" name="imagen">
+                </div>
+                <div>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" cols="25" rows="4" ></textarea>
+                <div class="terminos">
+                    <label for="terms">Acepto terminos y condiciones</label>
+                    <input type="checkbox" name="terms" id="terms">
+                </div>
+                    <div class="bottoms">
+                    <button id="submitbutton">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                    <input type="hidden" name="_captcha" value="false">
+                    </form>
+                    <script src="../javascript/form.js"></script>
+        </section>
+    </main>
+    <div class="footer" >
+    <footer>
+        <p>Derechos de autor © 2024 - Blog de Músicos de Blues Contemporáneos</p>
+    </footer>
+    </div>
+    </body>
+    </html>

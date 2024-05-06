@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.6;
+    color: #fff;
+      
+}
+
+body {
+    background-image: url(../media/pexels-mark-angelo-sampan-738078-1587927.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e2940;
+}
+
+header {
+    width: 100%;
+    padding: 0;
+    z-index: 1000px;
+    margin-bottom: 3vh;
+}
+
+
+.logo {
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 7rem;
+}
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff; 
+    text-decoration: none;
+    transition: background-color 0.2s ease; 
+}
+
+.nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+h1 { 
+    font-family: "Jersey 25 Charted", sans-serif;
+    font-weight: 40;
+    font-style: normal;
+    font-size: 70px;
+    letter-spacing: 10px;
+    line-height: 4.5rem; 
+    text-align: center;
+    color: black
+}
+h2 {
+    font-family: "Jersey 25 Charted", sans-serif;
+    font-weight:70;
+    font-style: normal;
+    font-size: 45px;
+    letter-spacing: 7px;
+    line-height: 3.5rem; 
+    text-align: center;
+    color: rgba(255, 255, 255, 0.801);  
+    padding-top: 40px;    
+    padding-bottom: 20px;
+}
+.marcusIMG {
+    display: inline-block;
+    justify-content: center;
+    width: 70%;
+    margin-left: 10rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 10px;
+}
+section {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #0e2940;
+    padding: 1em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#ultimaspublicaciones {
+    text-align: center;
+    margin: 10vh 05vh 0; 
+    margin-bottom: 0;
+}
+#destacados {
+    margin-bottom: 10px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/* medida responsive smarthphone*/ 
+
+@media only screen and (max-width: 767px) {
+     body {
+        display: grid;
+        min-height: 100vh;
+    } 
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        margin-right: 15px; 
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        position: relative;
+        right: 40px;
+        color: #ececec;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-height: calc(100vh - 100px); 
+        overflow-y: auto;
+        background-color: #0e2940;
+        padding: 15px;
+        padding-bottom: 0;
+        border: 1px solid #ffffff52;
+        box-shadow: 0 0 0 500vmax rgba#0e2940;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-list li a {
+        color: #ecececec;
+    }
+    h2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    .marcusIMG {
+        margin-left: auto;
+    }
+    
+    .footer {
+        background-color: #0e2940;
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+    }
+}
+
+/* medida responsive tablet*/ 
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    body {
+        display: grid;
+        min-height: 100vh;
+    }
+
+    .footer {
+        background-color: #0e2940;
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+    }
+    #ultimaspublicaciones {
+        text-align: center;
+        margin: 25vh 05vh 0; 
+    }
+    .marcusIMG {
+        margin-left: 6rem;
+    }
+    
+}
+
+/* medida responsive laptop*/ 
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    
+    body {
+        display: grid;
+        min-height: 100vh;
+    }
+   
+    main {
+        margin-left: 10px;
+        padding: 5px;
+    }
+    section {
+        width: 90%;
+        margin-left: 5px;
+        padding: 10px;
+    }
+
+    .footer {
+        background-color: #0e2940;
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+    }
+} 

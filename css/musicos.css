@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.6;
+    color: white;
+}
+
+body {
+    display: grid;
+    background-image: url(../media/fondoMusicos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e2940; 
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 7rem;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white; 
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+main {
+    padding: 20px;
+}
+
+#musicos {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 50px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.musico {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.musico .textos {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.h-2 {
+    display: grid;
+    justify-content: center;
+    padding: 50px 0 1px;
+}
+
+.footer {    
+    display: grid;
+    place-items: center;
+    background-color: #0e2940;
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
