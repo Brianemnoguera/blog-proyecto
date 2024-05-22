@@ -25,52 +25,42 @@ form.addEventListener("submit", (e) => {
 });
 
 nombre.addEventListener("change", (e) => {
-    if (e.target.value.trim().length > 0) formIsValid.nombre = true;
+    formIsValid.nombre = /^[a-zA-Z]+$/.test(e.target.value.trim());
 });
 
 apellido.addEventListener("change", (e) => {
-    if (e.target.value.trim().length > 0) formIsValid.apellido = true;
+    formIsValid.apellido = /^[a-zA-Z]+$/.test(e.target.value.trim());
 });
 
 ingresesucorreoelectronico.addEventListener("change", (e) => {
-    if (e.target.value.trim().length > 0) formIsValid.ingresesucorreoelectronico = true;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    formIsValid.ingresesucorreoelectronico = emailRegex.test(e.target.value.trim());
 });
 
 opciones.addEventListener("change", (e) => {
-    if (e.target.value.length > 0) formIsValid.opciones = true;
+    formIsValid.opciones = e.target.value.trim().length > 0;
 });
 
 imagen.addEventListener("change", (e) => {
-    const file = e.target.files[0];
-    if (file) {
-        formIsValid.imagen = true;
-    } else {
-        formIsValid.imagen = false;
-    }
+    formIsValid.imagen = e.target.files.length > 0;
 });
 
 comentarios.addEventListener("change", (e) => {
-    if (e.target.value.trim().length > 0) formIsValid.comentarios = true;
+    formIsValid.comentarios = e.target.value.trim().length > 0;
 });
 
 terms.addEventListener("change", (e) => {
     formIsValid.terms = e.target.checked;
-    e.target.checked ? button.removeAttribute("disabled") : button.setAttribute("disabled", true);
+    button.disabled = !e.target.checked;
 });
 
 const Validate = () => {
     const formValues = Object.values(formIsValid);
-    const valid = formValues.findIndex((value) => value == false);
-    if (valid == -1) {
+    const valid = formValues.every(value => value === true);
+    if (valid) {
         form.submit();
         alert("Formulario enviado con éxito");
     } else {
-        alert("Formulario inválido");
+        alert("Por favor, complete todos los campos correctamente");
     }
 };
-
-
-
-
-
-

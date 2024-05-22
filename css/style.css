@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 2.6;
-    color: #fff;
-      
+    color: white;
 }
-
 body {
     background-image: url(../media/pexels-mark-angelo-sampan-738078-1587927.jpg);
     background-position: center;
@@ -67,27 +65,22 @@ header {
     background-color: rgba(255, 255, 255, 0.2); 
 }
 
-h1 { 
-    font-family: "Jersey 25 Charted", sans-serif;
-    font-weight: 40;
-    font-style: normal;
-    font-size: 70px;
-    letter-spacing: 10px;
-    line-height: 4.5rem; 
-    text-align: center;
-    color: black
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 50px;
+    padding: 1px;
+    position: relative; 
+    color: rgba(255, 255, 255, 0.76); 
+    -webkit-text-stroke: 1rem rgba(250, 250, 250, 0.205); 
 }
+
 h2 {
-    font-family: "Jersey 25 Charted", sans-serif;
-    font-weight:70;
-    font-style: normal;
-    font-size: 45px;
-    letter-spacing: 7px;
-    line-height: 3.5rem; 
-    text-align: center;
-    color: rgba(255, 255, 255, 0.801);  
-    padding-top: 40px;    
-    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
 }
 .marcusIMG {
     display: inline-block;
@@ -106,6 +99,7 @@ section {
 }
 
 .footer {
+    display: grid;
     background-color: #0e2940;
     padding: 1em;
     text-align: center;
@@ -165,14 +159,11 @@ section {
         position: fixed;
         top: 0;
         right: 0;
-        bottom: 0;
         max-height: calc(100vh - 100px); 
         overflow-y: auto;
         background-color: #0e2940;
         padding: 15px;
-        padding-bottom: 0;
         border: 1px solid #ffffff52;
-        box-shadow: 0 0 0 500vmax rgba#0e2940;
     }
 
     .nav.visible {

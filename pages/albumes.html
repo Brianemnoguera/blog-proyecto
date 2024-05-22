@@ -1,64 +1,91 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Álbumes de Blues Contemporáneos</title>
-    <link rel="stylesheet" href="../css/albumes.css">
+    <link rel="icon" href="/media/icono.jpg">
+    <link rel="stylesheet" href="../css/galeria.css">
 </head>
 <body>
-
     <header>
         <img class="logo" src="../media/logo.jpg" alt="logo">
-            <nav class="nav" id="nav">
-                <ul class="nav-list">
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="../pages/musicos.html">Músicos</a></li>
-                    <li><a href="#">Álbumes</a></li>
-                    <li><a href="../pages/acercade.html">Acerca de</a></li>
-                </ul>
-            </nav>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar" ><i class="bi bi-x-lg"></i></button>
+            <ul class="nav-list">
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="../pages/musicos.html">Músicos</a></li>
+                <li> <a href="../pages/albumes.html">Álbumes</a></li>
+                <li> <a href="../pages/acercade.html">Acerca de</a></li>
+    
+            </ul>
+        </nav>
     </header>
 
-<main>
-    <section id="albums">
-        <h2>Últimos Álbumes</h2>
-        <div class="album">
-            <img src="../media/imagenesalbums/johnmayer.jpeg" alt="Álbum 1">
-            <h3>john mayer / soft rock</h3>
-            <p>Sob Rock es el octavo álbum del cantautor estadounidense John Mayer. Fue lanzado el 16 de julio de 2021 a través de Columbia Records.</p>
-        </div>
-        <div class="album">
-            <img src="../media/imagenesalbums/joebonamassa.jpg" alt="Álbum 2">
-            <h3>Joe bonamassa / Blues Deluxe vol. 2</h3>
-            <p>Blues Deluxe vol. 2 es el decimosexto álbum de estudio en solitario del músico estadounidense de blues rock Joe Bonamassa, lanzado a través de J&R Adventures en Norteamérica y Provogue en Europa el 6 de octubre de 2023</p>
-        </div>
-        <div class="album">
-            <img src="../media/imagenesalbums/ericgales.jpg" alt="Álbum 3">
-            <h3>Eric gales / Crown</h3>
-            <p>Eric Gales está de regreso, y apuesta por ocupar legítimamente su lugar entre los mejores guitarristas del planeta con su nuevo álbum Crown, Producido por Joe Bonamassa y Josh Smith, este es Eric en su momento más audazmente vulnerable, inflexiblemente político e inquebrantablemente confiado.</p>
-        </div>
-        <div class="album">
-            <img src="../media/imagenesalbums/tedeschitrucks.jpg" alt="Álbum 4">
-            <h3>Tedeschi Trucks band / I am The Moon</h3>
-            <p>En el tiempo libre durante la pandemia, la banda se reunió en el estudio para escribir y grabar una gran cantidad de canciones nuevas para un futuro álbum de estudio.</p>
-        </div>
-        <div class="album">
-            <img src="../media/imagenesalbums/marcusking.jpeg" alt="Álbum 5">
-            <h3>Marcus king / mood</h3>
-            <p>Marcus King ha anunciado un nuevo álbum producido por Rick Rubin, titulado Mood Swings el cual ya se encuentra a la venta</p>
-        </div>
-        <div class="album">
-            <img src="../media/imagenesalbums/philipsayce.jpg" alt="Álbum 6">
-            <h3>Philip sayce "The wolves are comming"</h3>
-            <p>nuevo álbum | ¡ya disponible! The wolves are comming. ¡nuevo sencillo!</p>
-        </div>
-    </section>
-<div class="footer" >
-    <footer>
-        <p>Derechos de autor © 2024 - Blog de Músicos de Blues Contemporáneos</p>
-    </footer>
-</div>
+    <div class="container">
+        <div class="card">
+            <figure>
+                <img src="../media/johnmayer.jpg" >
+            </figure>
+            <div class="contenido">
+                <h3>JOHN MAYER</h3>
+                <p><a href="john.html">Ver álbumes</a></p>
+            </div>
+        </div> 
+        <div class="card">
+            <figure>
+                <img src="../media/ericgales.jpg" >
+            </figure>
+            <div class="contenido">
+                <h3>ERIC <br> GALES</h3>
+            <p><a href="eric.html">Ver álbumes</a></p>
+            </div>
+        </div> 
+        <div class="card">
+            <figure>
+                <img src="../media/joe.jpg" >
+            </figure>
+            <div class="contenido">
+                <h3>JOE BONAMASSA</h3>
+                <p><a href="joe.html">Ver álbumes</a></p>
+            </div>
+        </div> 
+        <div class="card">
+            <figure>
+                <img src="../media/theMarcusKingBand.jpg" >
+            </figure>
+            <div class="contenido">
+                <h3>MARCUS KING</h3>
+                <p> <a href="marcus.html">Ver álbumes</a></p>
+            </div>
+        </div> 
+        <div class="card">
+            <figure>
+                <img src="../media/tedeschitrucks.jpg" >
+            </figure>
+            <div class="contenido">
+                <h3>TEDESCHI TRUCKS </h3>
+                <p><a href="tedeschi.html">Ver álbumes</a></p>
+            </div>
+        </div> 
+        <div class="card">
+            <figure>
+                <img src="../media/philipsayce.jpeg" >
+            </figure>
+            <div class="contenido">
+                <h3>PHILIP SAYCE</h3>
+                <p><a href="philip.html">Ver álbumes</a></p>
+            </div>
+        </div> 
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>Derechos de autor © 2024 - Blog de Músicos de Blues Contemporáneos</p>
+        </footer>
+    
 
 </body>
 </html>

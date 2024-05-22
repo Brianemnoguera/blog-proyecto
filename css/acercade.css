@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 2.6;
     color: #fff;
 }
@@ -21,7 +21,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-/*     padding: 10rem; */
     background-color: #0e2940;
     width: 100%;
     z-index: 1000;
@@ -53,7 +52,7 @@ header {
 .nav ul li a {
     display: block;
     padding: 10px 20px;
-    color: white; /* Cambiado el color del texto a blanco */
+    color: white;
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
@@ -63,12 +62,13 @@ header {
 }
 
 .footer {
+    display: grid;
     background-color: #0e2940;
-    position: relative;
+    padding: 1em;
     text-align: center;
+    position: relative;
     bottom: 0;
     width: 100%;
-    height: 70px;
 }
 
 .about {
@@ -166,18 +166,18 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 15px;
-    background-color: #2a5788; /* Nuevo color de fondo */
-    color: #fff; /* Color del texto */
+    background-color: #2a5788; 
+    color: #fff; 
 }
 
 button:hover {
-    background-color: #3c72b0; /* Nuevo color de fondo al pasar el ratón */
+    background-color: #3c72b0;
 }
 
 #submitbutton {
-    background-color: #2a5788; /* Nuevo color de fondo */
+    background-color: #2a5788; 
 }
 
 #submitbutton:hover {
-    background-color: #3c72b0; /* Nuevo color de fondo al pasar el ratón */
+    background-color: #3c72b0;
 }
